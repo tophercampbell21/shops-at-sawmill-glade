@@ -1,0 +1,69 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2.4rem;
+  padding: 1.2rem 3.6rem;
+  border-radius: 250px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  // font-family: var(--font);
+
+  @include respond(laptop) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(phone) {
+    display: inline-block;
+  }
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--dark-blue);
+  border: 2px solid var(--gold);
+}
+
+.btn-blue {
+  background-color: var(--dark-blue);
+  color: #fff;
+  border: 2px solid var(--dark-blue);
+}
+
+.btn-white {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: var(--dark-blue);
+  }
+}
+
+.btn:hover {
+  transform: scale(1.05, 1.05) translateY(-0.2rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+button {
+  font-family: var(--font);
+}
+
+.btn-main {
+  animation: moveInBottom 0.5s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+.btn-div {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

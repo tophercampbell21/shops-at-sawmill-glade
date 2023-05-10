@@ -1,0 +1,45 @@
+.section-space {
+  padding: 7.2rem 0;
+
+  @include respond(tab-land) {
+    padding: 3.6rem 0;
+  }
+}
+
+.mg-btm-xlg {
+  margin-bottom: 7.2rem;
+}
+
+.mg-btm-lg {
+  margin-bottom: 6rem;
+}
+
+.mg-btm-med {
+  margin-bottom: 4.8rem;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.mg-btm-sm {
+  margin-bottom: 3.6rem;
+}
+
+.mg-btm-xsm {
+  margin-bottom: 2.4rem;
+}
+
+.mg-btm-xxsm {
+  margin-bottom: 1.2rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}

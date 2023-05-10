@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&display=swap);
+
+:root {
+  --dark-blue: #002947;
+  --gold: #ffcc53;
+  --font: "DM Serif Display, serif";
+  --font-text: "Libre Baskerville, serif";
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(laptop) {
+    //1500
+    font-size: 58%;
+  }
+
+  @include respond(tab-land) {
+    //1200px
+    font-size: 55%;
+  }
+
+  @include respond(tab-port) {
+    // 900px
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  font-family: var(--font);
+
+  @include respond(tab-port) {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
